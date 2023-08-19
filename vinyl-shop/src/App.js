@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import CustomNavbar from './components/Navbar';
-import ItemsListContainer from './components/ItemsListContainer';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Apparel from './pages/Apparel';
+import Catalog from './pages/Catalog';
+import Deals from './pages/Deals';
+import Picks from './pages/Picks';
 
-
-// App component, eventually will be use to update cart
 function App() {
-  const [cartCount, setCartCount] = useState(0);
-
-// Function to update cart count it will be utilize moving forward
-  const updateCartCount = (count) => {
-    setCartCount(count);
-  };
-// This is what is needed for preentrega1
   return (
-    <div className="App">
-      <CustomNavbar cartCount={cartCount} />
-      <Container>
-        <ItemsListContainer greeting="Browse our catalog and inmerse in the world of good music!" />
-      </Container>
-    </div>
-  );
+    <>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/catalog" element={<Catalog/>}/>
+      <Route path="/apparel" element={<Apparel/>}/>
+      <Route path="/deals" element={<Deals/>}/>
+      <Route path="/picks" element={<Picks/>}/>
+    </Routes>
+    </>
+    );
 }
 
 export default App;
