@@ -1,22 +1,24 @@
-{
-    "items":[
+[
     {
         "id": 1,
         "artist": "Miley Cirus",
         "title": "Decades",
         "album": "Flowers",
         "price": 39.99,
-        "image": "release3.png",
-        "description": "2 LP used like new, red and blue vinyl"
+        "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Clothes",
+        "url":["https://m.media-amazon.com/images/I/31WmKkRakeL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 2,
         "artist": "Beatles",
         "title": "Postal Service",
-        "album": "Abbey Road",
+        "album": "Abbey Road",    
         "price": 21.99,
-        "image": "release2.png",
-        "description": "1 LP like new"
+        "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Clothes",
+        "url":["https://m.media-amazon.com/images/I/51wqQoqZ7kL._SY300_SX300_QL70_FMwebp_.jpg"]
+       
     },
     {
         
@@ -25,8 +27,9 @@
         "title": "Someday",
         "album": "Human",
         "price": 59.99,
-        "image": "release1.png",
-        "description": "2 LP used, few scratches"
+        "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Clothes",
+        "url":["https://m.media-amazon.com/images/I/213XFYpZtHL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 4,
@@ -34,8 +37,9 @@
         "title": "Love Somebody",
         "album": "Cloud Nine",
         "price": 51.99,
-        "image": "release4.png",
-        "description": "4 LP used like new"
+        "description": "4 LP used like new, analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/51kI9lErKWL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 5,
@@ -43,8 +47,9 @@
         "title": "Plsstic Beach",
         "album": "The War",
         "price": 59.99,
-        "image": "plastic.webp",
-        "description": "1 LP like new"
+        "description": "1 LP like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/418W7MlEy9L._SX522_.jpg"]
     },
     {
         "id": 6,
@@ -52,8 +57,9 @@
         "title": "hotel California",
         "album": "The War",
         "price": 48.99,
-        "image": "hotel.webp",
-        "description": "2 LP new"
+        "description": "2 LP new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/41prcCWbwQL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 7,
@@ -61,8 +67,9 @@
         "title": "The Best of Bob",
         "album": "Alone",
         "price": 23.99,
-        "image": "bobmarley.webp",
-        "description": "4 LP used, 9/10 good conditions"
+        "description": "4 LP used, 9/10 good conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/41WbGnfvrcL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 8,
@@ -70,8 +77,9 @@
         "title": "Darkside Moon",
         "album": "The War",
         "price": 33.99,
-        "image": "pink.webp",
-        "description": "2 LP used like new"
+        "description": "2 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/31+szRBlJyL._SY300_.jpg"]
     },
     {
         
@@ -80,8 +88,9 @@
         "title": "La la land",
         "album": "The War",
         "price": 24.99,
-        "image": "lalaland.webp",
-        "description": "4 LP used like new"
+        "description": "4 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/31m3UHnYFML._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 10,
@@ -89,8 +98,9 @@
         "title": "Traveler",
         "album": "The War",
         "price": 38.99,
-        "image": "traveller.webp",
-        "description": "1 LP like new"
+        "description": "1 LP like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/511nwyFok9L._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 11,
@@ -98,8 +108,9 @@
         "title": "Dropout",
         "album": "ABS",
         "price": 49.99,
-        "image": "dropout.webp",
-        "description": "1 LP used perfect conditions"
+        "description": "1 LP used perfect conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/41STbIrHwzL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 12,
@@ -107,8 +118,9 @@
         "title": "Melodrama",
         "album": "One night",
         "price": 79.99,
-        "image": "melodrama.webp",
-        "description": "2 LP new, gold edition"
+        "description": "2 LP new, gold edition, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/41g5fLNeuML._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         
@@ -117,8 +129,9 @@
         "title": "Led Zeppelin",
         "album": "LP",
         "price": 44.99,
-        "image": "led.webp",
-        "description": "2 LP new, unopened"
+        "description": "2 LP new, unopened, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/51k7TOkCNkL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 14,
@@ -126,8 +139,9 @@
         "title": "John Lennon",
         "album": "Accross Bar",
         "price": 58.99,
-        "image": "album8.webp",
-        "description": "2 LP used like new"
+        "description": "2 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/51ZnsWWUxVL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 15,
@@ -135,8 +149,9 @@
         "title": "Lust for Life",
         "album": "Life",
         "price": 39.99,
-        "image": "lana.webp",
-        "description": "1 LP used like new"
+        "description": "1 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/41NMhi1QTPL._SX300_SY300_QL70_FMwebp_.jpg"]
     },
     {
         "id": 16,
@@ -144,8 +159,8 @@
         "title": "Sinatra Best",
         "album": "2 FP",
         "price": 14.99,
-        "image": "sinatra.webp",
-        "description": "4 LP used, perfect conditions"
+        "description": "4 LP used, perfect conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
+        "category": "Turntables",
+        "url":["https://m.media-amazon.com/images/I/51o9jtGOsHL._SX300_SY300_QL70_FMwebp_.jpg"]
     }
 ]
-}

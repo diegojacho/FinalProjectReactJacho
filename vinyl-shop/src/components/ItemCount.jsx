@@ -1,19 +1,9 @@
-import React, {useState} from "react";
-import '../style/ItemCount.css';
+import React from "react";
+import { useCount } from "../hooks/useCount";
 
-const ItemCount = ({onAddToCart}) =>{
-    const [count, setCount] = useState(1);
-    const handleIncrement =()=>{
-        setCount(count+1);
-    };
-    const handleDecrement =()=>{
-        if (count>1){
-            setCount(count-1);
-        }
-    };
-    const handleAddToCart =() =>{
-        onAddToCart(count);
-    };
+export function ItemCount() {
+    const {count, handleIncrement, handleDecrement, handleAddToCart}= useCount()
+
     return(
     <div className="item-count">
       <button className="count-button" onClick={handleDecrement}>-</button>
@@ -25,5 +15,3 @@ const ItemCount = ({onAddToCart}) =>{
     </div>
     );
 };
-
-export default ItemCount;

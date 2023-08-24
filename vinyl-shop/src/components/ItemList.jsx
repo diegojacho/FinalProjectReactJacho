@@ -1,32 +1,27 @@
-import React, {useState, useEffect} from 'react';
-import ItemCard from './ItemCard'
-import itemsData from '../data/items.json';
+import React, {useState} from 'react';
+import { Item } from './Item';
+import { SearchItems } from "./SearchItems";
 
-const fetchItems =() =>{
-    return new Promise ((resolve) =>{
-        setTimeout(()=>{
-            resolve(itemsData.items);
-        }, 2000);
-    });
-};
-
-const ItemList = () => {
-    const [items, setItems]=useState([]);
-    useEffect(()=>{
-        fetchItems().then((fetchedItems)=>{
-            setItems(fetchedItems);
-        });
-    },[]);
+export function ItemList({shopItems, switchSelection}) {
+    
+    const[search, setSearch] = useState('')
 
     return (
+    <>
+        <SearchItems updateFilter={(search) => setSearch(search)} switchSelection={switchSelection}></SearchItems>
         <div className="item-list row">
-        {items.map((item) => (
-          <div key={item.id} className="col-sm-6 col-md-4 col-lg-3"> 
-            <ItemCard item={item} />
-          </div>
-        ))}
+        {shopItems.filter((item)=>{
+            return(search.toLocaleLowerCase() === " " ? item : item.artist.toLowerCase().includes(search.toLowerCase()))
+        }).map(item => {
+            return(
+                 <div key={item.id} className="col-sm-6 col-md-4 col-lg-3"> 
+                 <Item key={item.id} {...item}></Item>
+                 </div>
+            )}
+        )}
       </div>
-    );
+    </>
+    )
 };
 
-export default ItemList;
+ 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartWidget = () => {
+export function CartWidget () {
     return (
       <div className="cart-widget">
       <i className="fas fa-shopping-cart"></i>
@@ -9,4 +9,3 @@ const CartWidget = () => {
     );
   };
 
-export default CartWidget;

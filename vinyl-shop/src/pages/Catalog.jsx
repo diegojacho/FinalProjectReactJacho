@@ -1,13 +1,13 @@
 import React from 'react';
-import ItemsListContainer from '../components/ItemsListContainer';
+import { ItemsListContainer } from '../components/ItemsListContainer';
 
-const Catalog =()=>{
+export function Catalog (){
    
     return (
     <div className="App">
-      <ItemsListContainer greeting="Browse our catalog and inmerse in the world of good music"/>
+      <ItemsListContainer greeting="Browse our catalog and inmerse in the world of good music"></ItemsListContainer>
     </div>
     
     )
 }
-export default Catalog;
+
