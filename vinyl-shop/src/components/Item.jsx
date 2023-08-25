@@ -9,7 +9,7 @@ export function Item({id, image, artist, title, url}){
 
       return (
        <div className={ `item-card ${isHovered ? 'hovered' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
-        <img src={url} className="item-image" />
+        <img src={url} alt="" className="item-image" />
         <div className={`item-info ${isHovered ? 'visible' : ''}`}>
           <h4>{artist}</h4>
           <h4>{title}</h4>
