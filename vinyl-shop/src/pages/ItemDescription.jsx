@@ -18,7 +18,7 @@ export function ItemDescription() {
                          <h3>{item.artist}</h3>
                          <h4>Price: ${item.price}</h4>
                          <p>{item.description}</p>
-                         <ItemCount id={item.id}/>
+                         <ItemCount key={item.id} {...item}/>
                          </div>
                     </Container>
                 )

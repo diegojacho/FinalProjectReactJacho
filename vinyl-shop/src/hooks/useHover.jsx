@@ -4,17 +4,11 @@ export function useHover(){
     const [isHovered, setIsHovered] = useState(false);
     const [isInfoVisible, setIsInfoVisible] = useState(false);
   
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
+    const handleMouseEnter = () => setIsHovered(true);
   
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
+    const handleMouseLeave = () => setIsHovered(false);
   
-    const toggleInfo = () => {
-      setIsInfoVisible(!isInfoVisible);
-    };
+    const toggleInfo = () => setIsInfoVisible(!isInfoVisible);
 
     return {isHovered, isInfoVisible, handleMouseEnter, handleMouseLeave, toggleInfo}
 }

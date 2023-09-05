@@ -1,10 +1,9 @@
 import React from 'react';
-import { ItemCount } from './ItemCount';
 import { Button } from 'react-bootstrap';
 import { useHover } from "../hooks/useHover";
 import { NavLink } from 'react-router-dom'
 
-export function Item({id, image, artist, title, url}){
+export function Item({id, artist, title, url}){
   const {isHovered, handleMouseEnter, handleMouseLeave} = useHover()
 
       return (
@@ -16,10 +15,7 @@ export function Item({id, image, artist, title, url}){
           <NavLink to={`/catalog/${id}`}>
             <Button className="view-description">View Description</Button>
           </NavLink>
-          <ItemCount/>
         </div>
       </div>
     );
 };
-
-//require(`/public/images/${image}`)

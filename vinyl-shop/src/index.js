@@ -6,13 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
+import { CartShopProvider } from './hooks/CartShopContext';
+import { ToastContainer } from 'react-toastify';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <CartShopProvider>
     <BrowserRouter>
-    <App />
+      <App />
+      <ToastContainer limit={2}/>
     </BrowserRouter>
+    </CartShopProvider>
   </React.StrictMode>
 );
 
