@@ -6,8 +6,9 @@
         "album": "Flowers",
         "price": 39.99,
         "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
-        "category": "Clothes",
-        "url":["https://m.media-amazon.com/images/I/31WmKkRakeL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "category": "Vinyls",
+        "url":["https://m.media-amazon.com/images/I/31WmKkRakeL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 2,
@@ -17,8 +18,8 @@
         "price": 21.99,
         "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Clothes",
-        "url":["https://m.media-amazon.com/images/I/51wqQoqZ7kL._SY300_SX300_QL70_FMwebp_.jpg"]
-       
+        "url":["https://m.media-amazon.com/images/I/51wqQoqZ7kL._SY300_SX300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         
@@ -29,7 +30,8 @@
         "price": 59.99,
         "description": "Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Clothes",
-        "url":["https://m.media-amazon.com/images/I/213XFYpZtHL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/213XFYpZtHL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 4,
@@ -39,7 +41,8 @@
         "price": 51.99,
         "description": "4 LP used like new, analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/51kI9lErKWL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/51kI9lErKWL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 5,
@@ -49,7 +52,8 @@
         "price": 59.99,
         "description": "1 LP like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/418W7MlEy9L._SX522_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/418W7MlEy9L._SX522_.jpg"],
+        "stock": 10
     },
     {
         "id": 6,
@@ -59,7 +63,8 @@
         "price": 48.99,
         "description": "2 LP new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/41prcCWbwQL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/41prcCWbwQL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 7,
@@ -69,7 +74,8 @@
         "price": 23.99,
         "description": "4 LP used, 9/10 good conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/41WbGnfvrcL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/41WbGnfvrcL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 8,
@@ -79,7 +85,8 @@
         "price": 33.99,
         "description": "2 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/31+szRBlJyL._SY300_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/31+szRBlJyL._SY300_.jpg"],
+        "stock": 10
     },
     {
         
@@ -90,7 +97,8 @@
         "price": 24.99,
         "description": "4 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/31m3UHnYFML._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/31m3UHnYFML._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 10,
@@ -100,7 +108,8 @@
         "price": 38.99,
         "description": "1 LP like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/511nwyFok9L._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/511nwyFok9L._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 11,
@@ -110,7 +119,8 @@
         "price": 49.99,
         "description": "1 LP used perfect conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/41STbIrHwzL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/41STbIrHwzL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 12,
@@ -120,7 +130,8 @@
         "price": 79.99,
         "description": "2 LP new, gold edition, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/41g5fLNeuML._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/41g5fLNeuML._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         
@@ -131,7 +142,8 @@
         "price": 44.99,
         "description": "2 LP new, unopened, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/51k7TOkCNkL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/51k7TOkCNkL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 14,
@@ -141,7 +153,8 @@
         "price": 58.99,
         "description": "2 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/51ZnsWWUxVL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/51ZnsWWUxVL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 15,
@@ -151,7 +164,8 @@
         "price": 39.99,
         "description": "1 LP used like new, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Vinyls",
-        "url":["https://m.media-amazon.com/images/I/41NMhi1QTPL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/41NMhi1QTPL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     },
     {
         "id": 16,
@@ -161,6 +175,7 @@
         "price": 14.99,
         "description": "4 LP used, perfect conditions, Analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.",
         "category": "Turntables",
-        "url":["https://m.media-amazon.com/images/I/51o9jtGOsHL._SX300_SY300_QL70_FMwebp_.jpg"]
+        "url":["https://m.media-amazon.com/images/I/51o9jtGOsHL._SX300_SY300_QL70_FMwebp_.jpg"],
+        "stock": 10
     }
 ]

@@ -1,10 +1,10 @@
-import data from "../data/items.json"
-import { useFilter } from "../hooks/useFilter";
 import { ItemList }   from './ItemList';
 import { ItemListLoading } from "./ItemListLoading";
+import { useGetCollection } from "../hooks/useGetCollection";
 
 export function ItemsListContainer (props) {
-  const {shopItems, switchSelection} = useFilter(data)
+  const { shopItems, switchSelection } = useGetCollection()
+  
     return (
     <>
        <h4 style={{ margin:"20px" }}>{props.greeting}</h4>

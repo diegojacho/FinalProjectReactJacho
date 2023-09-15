@@ -1,14 +1,13 @@
 import {Container, Col, Row} from "react-bootstrap";
-import data from "../data/items.json"
-import { useFilter } from "../hooks/useFilter";
+import { useGetCollection } from "../hooks/useGetCollection";
 import { Item } from "../components/Item";
 import Accordion from "react-bootstrap/Accordion"
 import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 
 export function Categories(){
-    const {shopItems} = useFilter(data)
-    const categories = data.map(item => item.category)
+    const {shopItems} = useGetCollection()
+    const categories = shopItems.map(item => item.category)
     const uniqueCategories = new Set(categories)
     return(
         <Container>

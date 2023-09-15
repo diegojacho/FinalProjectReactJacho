@@ -15,7 +15,7 @@ export function HeroCarousel () {
     <>
       <Carousel style={carouselItemStyle}>
         {carouselImages.map((image, index) => (
-          <Carousel.Item className="w-100" key={index} style={carouselItemStyle}>
+          <Carousel.Item className ="w-100" key={index} style={carouselItemStyle}>
             <img src={image} className="d-flex justify-content-center align-items-center" style={carouselImageStyle} alt={`Carousel ${index}`} />
           </Carousel.Item>
         ))}

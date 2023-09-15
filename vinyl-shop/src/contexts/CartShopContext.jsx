@@ -1,4 +1,5 @@
-import {createContext, useContext, useState} from "react";
+import { getDocs, getFirestore, collection } from "firebase/firestore";
+import { createContext, useContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,14 +10,29 @@ export function useShopCart(){
 }
 
 export function CartShopProvider({children}){
+    
+    const [shopItems, setShopItems] = useState([])
+    useEffect(()=>{
+        const db=getFirestore();
+        const itemsFirestore = collection(db, "items");
+        getDocs(itemsFirestore).then(result=>{
+            setShopItems(result.docs.map((doc)=>({id: doc.id, ...doc.data()})))
+        })
+    },[])
+
     const [cartItems, setCartItems] = useState([])
-   
    
     const cartCount = cartItems.reduce(
         (count, item) => item.count + count, 0
     )
 
-    function addCartQuantity(id, title, artist, count){
+    const totalOrder = cartItems.reduce((total, cartItem)=>{
+        const item = shopItems.find(i => i.id === cartItem.id)
+        return(total + (item?.price || 0) * cartItem.count)
+    },0
+    )
+
+    function addCartQuantity(id, title, artist, number, stock){
         toast.success('Item added to your cart',{
             autoClose:200,
             position:"top-right",
@@ -28,17 +44,23 @@ export function CartShopProvider({children}){
             theme:"colored",
         });
         setCartItems(currentItems=>{
-            if (currentItems.find(item=>(item.id===id && item.title===title && item.artist===artist)) == null){
+            if (currentItems.find(item => (item.id===id && item.title===title && item.artist===artist)) == null){
                 return(
-                    [...currentItems, {id, title, artist, count}]
+                    [...currentItems, {id, title, artist, count:number, stock}]
                 )
             } else {
                 return(
                     currentItems.map(item=>{
                         if(item.id===id && item.title=== title && item.artist===artist){
-                            return(
-                                {...item, count: item.count + count}
-                            )
+                            if(item.count + number <= stock){
+                                return(
+                                    {...item, count: item.count + number}
+                                )
+                            } else {
+                                return (
+                                    {...item, count: stock}
+                                )
+                            }   
                         } else {
                             return item
                         }
@@ -56,9 +78,13 @@ export function CartShopProvider({children}){
         })
     }
 
+    function clear(){
+        setCartItems([])
+    }
+
     function increaseQuantity(id, title, artist){
         setCartItems(currentItems=>{
-            if (currentItems.find(item=>(item.id===id && item.title === title && item.artist === artist))){
+            if (currentItems.find(item => (item.id===id && item.title === title && item.artist === artist))){
                 return(
                     currentItems.map(item=>{
                         if (item.id === id && item.title === title && item.artist === artist){
@@ -77,10 +103,10 @@ export function CartShopProvider({children}){
 
     function decreaseQuantity(id, title, artist){
         setCartItems(currentItems=>{
-            if(currentItems.find(item=>(item.id===id && item.title === title && item.artist === artist)) !==undefined){
+            if(currentItems.find(item=>(item.id===id && item.title === title && item.artist === artist))!==undefined){
                 return(
                     currentItems.map(item=>{
-                        if (item.id === id && item.title === title && item.artist === artist){
+                        if (item.id === id && item.title === title && item.artist === artist && item.count>1){
                             return(
                                 {...item, count: item.count - 1}
                             )
@@ -92,8 +118,8 @@ export function CartShopProvider({children}){
             }
         })
     }
-    const AllObjects ={
-        cartItems, setCartItems, cartCount, addCartQuantity, removeFromCart, increaseQuantity, decreaseQuantity
+    const AllObjects = {
+        cartItems, shopItems, cartCount, totalOrder, addCartQuantity, removeFromCart, clear, increaseQuantity, decreaseQuantity
     }
 
     return(

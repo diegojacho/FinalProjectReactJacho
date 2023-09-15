@@ -1,12 +1,11 @@
 import {Stack, Button } from "react-bootstrap";
-import { useShopCart } from "../hooks/CartShopContext";
-import data from "../data/items.json";
+import { useShopCart } from "../contexts/CartShopContext";
 import { setCurrency } from "../helper/setCurrency";
 
 
-export function ShopCartItem({id, title, artist, count}){
-    const { removeFromCart, increaseQuantity, decreaseQuantity } = useShopCart()
-    const item = data.find(i => i.id === id)
+export function ShopCartItem({id, title, artist, count, stock}){
+    const { shopItems, removeFromCart, increaseQuantity, decreaseQuantity } = useShopCart()
+    const  item = shopItems.find(i => i.id === id)
 
     return(
         <Stack direction="horizontal" gap={1} className="d-flex align-items-center">
@@ -16,9 +15,9 @@ export function ShopCartItem({id, title, artist, count}){
                 <div className="mb-1">{`${setCurrency(item.price)}`}</div>
                 <div className="d-flex align-items-center justify-content-between" style={{fontSize:"12px", fontStyle:"italic"}}>
                     <div className="mb-3 justify-content-center align-items-center">
-                        <button className="count-button" type ="button" onClick={()=>decreaseQuantity()}>-</button>
-                        <span className="count">{count}</span>
-                        <button className="count-button" type ="button" onClick={()=>increaseQuantity()}>+</button>
+                        <button className="count-button" type ="button" onClick={()=>decreaseQuantity(id, title, artist)}>-</button>
+                        <span className="count">{`${count}`}</span>
+                        {count<stock && <button className="count-button" type ="button" onClick={()=>increaseQuantity(id, title, artist)}>+</button>}
                     </div>
                 </div>
             </div>
