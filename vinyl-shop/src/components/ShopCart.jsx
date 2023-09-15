@@ -30,7 +30,7 @@ export function ShopCart(){
                     <Modal.Title>Your Cart</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Stack classname='gap-2'>
+                    <Stack className='gap-2'>
                         {cartItems.map(item => (<ShopCartItem key={item.id} {...item}/>)) }
                     </Stack>
                     <div className="d-flex justify-content-end fw-bold mt-3">Total {setCurrency(totalOrder)}</div>

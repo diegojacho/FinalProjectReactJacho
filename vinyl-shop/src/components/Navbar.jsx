@@ -13,11 +13,9 @@ export function NavBar() {
       <Container fluid>
         <Navbar.Brand >
             <Nav.Link to="/" as={NavLink}>
-              <img
-                  src={logo}
-                  alt="Vinyl Logo"
-                  style={{ height: '30px', marginRight: '10px' }}
-              /><a style={{ color: 'inherit', textDecoration: 'inherit'}} href='/'>Vinyl Record Store</a>
+              <div className="d-flex">
+              <img src={logo} alt="Vinyl Logo" style={{ height: '35px', marginRight: '10px', marginTop:"10px" }}/><p style={{ color: 'inherit', textDecoration: 'inherit', marginTop:"10px"}} href='/'>Vinyl Record Store</p>
+              </div>
             </Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
