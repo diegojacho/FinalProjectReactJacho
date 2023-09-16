@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { addDoc, collection, getFirestore } from "firebase/firestore"
-import { toast } from "react-toastify"
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { useShopCart } from "../contexts/CartShopContext"
 
 export function useSendOrder(){

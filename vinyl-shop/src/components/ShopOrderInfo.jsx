@@ -7,7 +7,7 @@ export function ShopOrderInfo({cartItems, totalOrder}){
     const { formValues, handleChange, onSendOrder } = useSendOrder()
     const handleSubmit = (e)=>{
         e.preventDefault()
-        onSendOrder(cartItems, totalOrder)
+        onSendOrder(totalOrder)
     }
     return(
         <>

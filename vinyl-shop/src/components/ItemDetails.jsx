@@ -11,7 +11,7 @@ export function ItemDetails({item}){
                     <h3>Stock: {item.stock}</h3>
                     <h4>Price: ${item.price}</h4>
                     <p>{item.description}</p>
-                    <ItemCount id={item.id} stock={item.stock} count={item.count}/>
+                    <ItemCount {...item} count={item.count}/>
                  </div>
             </Container>
     )
