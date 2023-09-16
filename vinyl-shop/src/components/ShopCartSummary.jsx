@@ -8,7 +8,8 @@ export function ShopCartSummary({cartItems, totalOrder}){
         {cartItems.length === 0 ? (<Container className="d-flex justify-content-cneter mt-4"><h3>Your cart is empty</h3></Container>):
         (<Container>
             <h1>Checkout</h1>
-            <Table stripped bordered hover>
+            <Table stripped="true" bordered hover>
+                <thead>
                     <tr>
                         <th>Item</th>
                         <th></th>
@@ -16,6 +17,7 @@ export function ShopCartSummary({cartItems, totalOrder}){
                         <th>Quantity</th>
                         <th></th>
                     </tr>
+                </thead>
                 <tbody>
                     {cartItems.map(item => (<ShopCartCheckoutItem key={item.id} {...item}/>))}
                 </tbody>

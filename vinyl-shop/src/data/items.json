@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        
         "artist": "Miley Cirus",
         "title": "Decades",
         "album": "Flowers",
@@ -11,7 +11,7 @@
         "stock": 10
     },
     {
-        "id": 2,
+        
         "artist": "Beatles",
         "title": "Postal Service",
         "album": "Abbey Road",    
@@ -23,7 +23,7 @@
     },
     {
         
-        "id": 3,
+       
         "artist": "Kuai Gabino",
         "title": "Someday",
         "album": "Human",
@@ -34,7 +34,7 @@
         "stock": 10
     },
     {
-        "id": 4,
+        
         "artist": "Kygo",
         "title": "Love Somebody",
         "album": "Cloud Nine",
@@ -45,7 +45,7 @@
         "stock": 10
     },
     {
-        "id": 5,
+        
         "artist": "Gorillaz",
         "title": "Plsstic Beach",
         "album": "The War",
@@ -56,7 +56,7 @@
         "stock": 10
     },
     {
-        "id": 6,
+        
         "artist": "Eagles, Don Henley",
         "title": "hotel California",
         "album": "The War",
@@ -67,7 +67,7 @@
         "stock": 10
     },
     {
-        "id": 7,
+        
         "artist": "Bob Marley",
         "title": "The Best of Bob",
         "album": "Alone",
@@ -78,7 +78,7 @@
         "stock": 10
     },
     {
-        "id": 8,
+       
         "artist": "Pink Floyd",
         "title": "Darkside Moon",
         "album": "The War",
@@ -90,7 +90,7 @@
     },
     {
         
-        "id": 9,
+       
         "artist": "Justin Paul",
         "title": "La la land",
         "album": "The War",
@@ -101,7 +101,7 @@
         "stock": 10
     },
     {
-        "id": 10,
+        
         "artist": "Chris Stapleton",
         "title": "Traveler",
         "album": "The War",
@@ -112,7 +112,7 @@
         "stock": 10
     },
     {
-        "id": 11,
+        
         "artist": "Kaney West",
         "title": "Dropout",
         "album": "ABS",
@@ -123,7 +123,7 @@
         "stock": 10
     },
     {
-        "id": 12,
+       
         "artist": "Lorde",
         "title": "Melodrama",
         "album": "One night",
@@ -135,7 +135,7 @@
     },
     {
         
-        "id": 13,
+        
         "artist": "Led Zeppelin",
         "title": "Led Zeppelin",
         "album": "LP",
@@ -146,7 +146,7 @@
         "stock": 10
     },
     {
-        "id": 14,
+        
         "artist": "John Lennon",
         "title": "John Lennon",
         "album": "Accross Bar",
@@ -157,7 +157,7 @@
         "stock": 10
     },
     {
-        "id": 15,
+       
         "artist": "Lana del Rey",
         "title": "Lust for Life",
         "album": "Life",
@@ -168,7 +168,7 @@
         "stock": 10
     },
     {
-        "id": 16,
+        
         "artist": "Frank Sinatra",
         "title": "Sinatra Best",
         "album": "2 FP",
